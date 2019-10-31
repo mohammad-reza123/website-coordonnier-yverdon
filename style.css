@@ -2,6 +2,7 @@
 ------------------------------------------------- */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /*------------------------------------------------------------------------*/
+
 html{
   box-sizing: border-box;
 }
@@ -15,43 +16,43 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: #C4CCCC;
-  font-family: 'Anton', sans-serif;
-  font-size: 1em;
+  color: #555f66;
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		line-height: 1.75em;
 /* font-family: 'Courgette', cursive; */
 }
 
 
 /*Headers*/
-#header ::after{
-background: #E1EAD8;
-color: #50C7C7;
-cursor: default;
-height: 5em;
-left: 0;
-line-height: 3em;
-position: fixed;
-top: 10px;
-width: 100%;
-font-size: 1.25rem;
-margin-top: -1rem;
-z-index: 10000;
-box-shadow: 0 0 0.1em rgb(206, 210, 201 );
+#header {
+  background: #fff;
+  color: #555f66;
+  cursor: default;
+  height: 3em;
+  left: 0;
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.25);
 }
 .navigationBar{
   width: 80%;
   text-align: right;
 }
 .navigationMenu{
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  text-decoration: none;
   padding: 0;
-  font-size: 2em;
+  font-size: 1em;
 
 }
 .top-header {
-	padding: 20px;
+  padding: 2px;
 }
 .navigationMenu .pipeline::after{
   margin: 0 ;
@@ -63,6 +64,13 @@ li{
 #header .alt{
   background-color: rgb(0,0,0,0.75);
   cursor: default;
+}
+a{
+  color: #629DD1;
+		text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
 }
 /*LINKS*/
 
@@ -77,8 +85,30 @@ li{
   align-items: center;
 }
 .h1{
-  font-size: 2em; 
+  color: #666f77;
+  font-weight: 300;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  text-align: center;
 }
+.services{
+  height: 150px;
+  width: 150px;
+  position: flex;
+  margin: 0;
+  display: inline;
+  border-radius: 50%;
+}
+.container-cercle-pic{
+  align-content: center;
+}
+.center-item{
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*MARGINS*/
 
 
@@ -95,17 +125,32 @@ li{
   height: 80vh !important;
   width: 100%;
 }
+
 .bgvalise{
   position: relative;
   padding: 6rem 0px 4rem;
   margin: 0;
 }
+.section-3{
+  background-color: #192024;
+  height: 100vh;
+}
+
 
 /*	4. LAYOUT
 ------------------------------------------------- */
 /*Custom Styles depending on your Project*/
-
-
+.container-services.services{
+  position: flex;
+  display: inline;
+}
+.row-3{
+  position: flex;
+  align-content: center;
+  height: 257px;
+  width: 568px;
+  border-radius: 6px;
+}
 
 /*	5. MEDIA QUERIES (Resposive stuff)
 ------------------------------------------------- */
