@@ -84,6 +84,9 @@ a:hover{
   justify-content: space-between;
   align-items: center;
 }
+.row-2{
+  display: flex;
+}
 .h1{
   color: #666f77;
   font-weight: 300;
@@ -173,6 +176,18 @@ a:hover{
 /*	4. LAYOUT
 ------------------------------------------------- */
 /*Custom Styles depending on your Project*/
+footer{
+  text-align: center;
+  background: #f8f8f8;
+  padding: 4em 0 6em 0;
+}
+.map{
+  border-radius: 6px;
+  margin-left: 8em;
+}
+.contact-text{
+  padding:  8em;
+}
 .container-services.services{
   position: flex;
   display: inline;
