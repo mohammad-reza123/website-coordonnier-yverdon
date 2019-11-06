@@ -73,6 +73,9 @@ a:hover{
   text-decoration: none;
 }
 /*LINKS*/
+.link-deco{
+  text-decoration: none;
+}
 
 /*PARAGRAPHS*/
 
@@ -185,6 +188,19 @@ footer{
   border-radius: 6px;
   margin-left: 8em;
 }
+.sign{
+  padding: 4em 0 0;
+  color: #c2d6d6;
+  text-decoration: none;
+}
+.sign .link-deco:hover{
+  font-size: 150%;
+  color: #192024;
+}
+footer p a {
+  color: #c2d6d6;
+}
+
 .contact-text{
   padding:  8em;
 }
