@@ -1,7 +1,9 @@
 /*	1. RESET BROWSER STYLES
+region
 ------------------------------------------------- */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /*------------------------------------------------------------------------*/
+
 
 html{
   box-sizing: border-box;
@@ -16,12 +18,12 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  color: #555f66;
+    color: #555f66;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 1em;
 		font-weight: 300;
-		line-height: 1.6;
-/* font-family: 'Courgette', cursive; */
+    line-height: 1.6;
+   /* font-family: 'Courgette', cursive; */
 }
 
 
@@ -47,7 +49,7 @@ li{
 
 
 /*PARAGRAPHS*/
-
+/* TODO CHANGE PLACE */
 .major {
   text-align: center;
   padding: 6em 0 4em;
@@ -72,8 +74,9 @@ li{
 /*ROWS*/
 .row{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
 }
 .jc-center {
   justify-content: center;
@@ -101,12 +104,14 @@ li{
   letter-spacing: 0.125em;
   text-align: center;
 }
+/* TODO CHANGER DE PLACE */
 .services{
   height: 150px;
   width: 150px;
   margin: 0 auto;
   border-radius: 50%;
 }
+/* TODO CHANGER DE PLACE */
 .container-cercle-pic{
   align-content: center;
 }
@@ -119,16 +124,17 @@ li{
   text-align: center;
   margin: 0 0 4em 0;
 }
-
+/* TODO CHANGER DE PLACE */
 .img-containers{
   border: bold 1px #555f66;
-  min-height: 400px;
+  /* min-height: 400px;
   max-width: 370px;
-  margin-right: 4em;
+  margin-right: 4em; */
 }
-.img-containers:last-child {
+/* .img-containers:last-child {
   margin: 0;
-}
+} */
+/* TODO CHANGER DE PLACE */
 .shadowBox{
   border-radius: 100%;
   box-shadow: 0 0 0 10px #fff, 0 0 0 11px rgba(144, 144, 144, 0.25);
@@ -142,6 +148,10 @@ li{
   padding: 3em 2em;
 }
 
+.content-container {
+  padding-right: 10%;
+  padding-left: 10%;
+}
 
 /*MARGINS*/
 .mg-box{
@@ -337,3 +347,45 @@ footer p a {
 }
 /*	5. MEDIA QUERIES (Resposive stuff)
 ------------------------------------------------- */
+
+/* DEFAULT - FOR "PHONES" PORTRAIT
+ * < 576
+--------------------------------------------*/
+@media (max-width: 576px) {
+
+  /*Change the root font-size*/
+  html {
+    font-size: 15px;
+  }
+  body{
+    font-size: 0.5em;
+		font-weight: 300;
+    line-height: 1.4;
+  }
+  /* #header {
+    background: #fff;
+    color: #555f66;
+    cursor: default;
+    height: 2em;
+    left: 0;
+    line-height: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.25);
+  } */
+  .col-3 {
+    width: 100%;
+  }
+}
+
+/*PHONES*/
+@media (max-width: 480px) {
+
+  section {
+    text-align: center;
+  }
+
+}
+/*#endregion MEDIA QUERIES*/
